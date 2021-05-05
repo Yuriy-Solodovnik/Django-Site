@@ -1,0 +1,45 @@
+* {
+  font-family:cursive;
+}
+
+input[type="search"] {
+  background-color: rgba(54, 71, 204, 0.2);
+}
+
+.container {
+  text-align: center;
+  margin-left: 3px;
+  width: 100%;
+}
+#title {
+  display: block;
+  font-size: 1.3em;
+  background-color: rgba(54, 71, 204, 0.1);
+  text-align: center;
+}
+
+#head {
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+nav > a {
+  background-color: rgba(54, 71, 204, 0.2);
+  border-radius: 10%;
+}
+
+nav > a:hover {
+  background-color: rgba(54, 71, 204, 0.6);
+  border-radius: 10%;
+}
+
+h3 {
+  background-color: rgba(54, 71, 204, 0.3);
+  border-radius: 90%;
+  text-align: center;
+}
+
+body {
+  background-image: url('../images/backimg.jpg');
+  background-size: 100%;
+}
