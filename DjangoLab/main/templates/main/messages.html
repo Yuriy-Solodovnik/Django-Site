@@ -1,0 +1,29 @@
+    {% extends 'main/base.html' %}
+    {% block title %}
+    {{ title }}
+    {% endblock %}
+    {% block content %}
+    <div>
+        <div class="container">
+            <h1>Сообщения</h1>
+            <form class="d-flex mt-2" action="{% url 'messages' %}" method="get">
+                <input class="form-control me-2" type="search" name="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        {% if messages %}
+        {% for i in messages%}
+            <div class="alert alert-warning mt-2">
+                <p id="title">{{i.title}}</p>
+                <span>{{i.body}}<hr>
+                    Дата публикации {{i.date}}
+                </span>
+            </div>
+        {% endfor %}
+        {% else %}
+            <div class="container">
+                Данных нет
+            </div>
+        {% endif %}
+    </div>
+    {% endblock %}
